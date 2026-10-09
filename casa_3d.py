@@ -67,7 +67,6 @@ def carregar_textura_do_disco(caminho_arquivo):
     return textura_id
 
 
-# ---------- Matrizes ----------
 def matriz_translacao(x, y, z):
     return np.array([[1,0,0,x], [0,1,0,y], [0,0,1,z], [0,0,0,1]], dtype=np.float32)
 
@@ -93,7 +92,6 @@ def matriz_perspectiva(fov, aspecto, near, far):
     ], dtype=np.float32)
 
 
-# ---------- Geometria ----------
 def paredes_da_casa():
     vertices = np.array([
         # Face Frontal
